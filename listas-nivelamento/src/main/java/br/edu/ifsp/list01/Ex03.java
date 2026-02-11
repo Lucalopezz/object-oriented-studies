@@ -24,8 +24,12 @@ public class Ex03 {
 
 
     String compute(int input) {
-        String output = null;
-        //put your logic here
-        return output;
+        if (input <= 0) return "Erro";
+
+
+        if (input % 400 == 0) return "Ano bissexto";
+        if (input % 4 == 0 && input % 100 != 0) return "Ano bissexto";
+
+        return "Ano nao bissexto";
     }
 }

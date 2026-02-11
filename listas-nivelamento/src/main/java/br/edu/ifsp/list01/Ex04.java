@@ -24,8 +24,19 @@ public class Ex04 {
     }
 
     int compute(int n, int c, int m) {
-        int output =  -1;
-        //put your logic here
-        return output;
+        if (n <= 0 || c == 0 || m == 0) return 0;
+
+        int chocolate = n / c;
+        int packaging = chocolate;
+        while (packaging >= m) {
+            int newChocolate = packaging / m;
+            // add the new earned chocolate
+            chocolate += newChocolate;
+            // calculates the new qty of packaging by
+            // adding the leftover packaging (that wasn't exchanged) plus the packaging from the new chocolates
+            int leftover = packaging % m;
+            packaging = leftover + newChocolate;
+        }
+        return chocolate;
     }
 }
