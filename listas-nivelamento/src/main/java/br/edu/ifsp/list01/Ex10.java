@@ -32,8 +32,38 @@ public class Ex10 {
     }
 
     String compute(int x1, int v1, int x2, int v2) {
-        String output = null;
-        //put your logic here
+        String output = "NAO";
+        for (int i = 0; i <= 100; i++) {
+            for(int j = 0; j <= 100; j++) {
+                x1 += v1;
+                x2 += v2;
+                if (x1 == x2) {
+                    output = "SIM";
+                }
+            }
+        }
         return output;
+
+
+        // A better solution
+//        if the velocity is equal
+//        if (v1 == v2) {
+//            return (x1 == x2) ? "SIM" : "NAO";
+//        }
+//
+//        // ff the kangaroo behind is slower, it will never overtake
+//        if (x1 < x2 && v1 <= v2) return "NAO";
+//        if (x2 < x1 && v2 <= v1) return "NAO";
+//
+//        //  verifies if there is a int where they meet
+//        int diffPos = x2 - x1;
+//        int diffVel = v1 - v2;
+//
+//        // if is a exact division and its positve they will meet
+//        if (diffPos % diffVel == 0 && diffPos / diffVel >= 0) {
+//            return "SIM";
+//        }
+//
+//        return "NAO";
     }
 }

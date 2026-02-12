@@ -28,8 +28,17 @@ public class Ex08 {
     }
 
     int compute(int n, int c) {
-        int output = -1;
-        //put your logic here
-        return output;
+        if (n == 0 || c == 0) return 0;
+
+        int total = 0;
+        for (int i = 0; i < n; i++) {
+            total += c;
+
+            if (c > 1) {
+                c--;
+            }
+        }
+
+        return total;
     }
 }

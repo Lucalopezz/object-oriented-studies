@@ -1,5 +1,7 @@
 package br.edu.ifsp.list01;
 
+import java.util.Locale;
+
 /*
     Faça um programa que leia um conjunto de valores que correspondem as idades de pessoas de uma comunidade. Quando
     o valor fornecido for um número negativo, significa que não existem mais idades para serem lidas. Após a leitura,
@@ -25,8 +27,21 @@ public class Ex09 {
     }
 
     String compute(int[] input) {
-        String output = null;
-        //put your logic here
-        return output;
+        int sum = 0;
+        int qtyMajor = 0;
+        int qtyOld = 0;
+        int i;
+        for (i = 0; i < input.length && input[i] >= 0; i++) {
+            sum += input[i];
+            if (input[i] >= 18) {
+                qtyMajor++;
+            }
+            if (input[i] > 75) {
+                qtyOld++;
+            }
+        }
+        double averageAge = (double) sum / i;
+        double oldPersonPercent = (double) (qtyOld * 100) / i;
+        return String.format(Locale.US,"%.2f %d %.2f%%", averageAge, qtyMajor, oldPersonPercent);
     }
 }
