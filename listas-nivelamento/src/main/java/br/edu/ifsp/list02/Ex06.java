@@ -1,5 +1,7 @@
 package br.edu.ifsp.list02;
 
+import java.util.StringJoiner;
+
 /*
     Faça um programa que leia um valor inteiro N. Após isso, leia dois vetores A e B de tamanho N. Em seguida, o programa
     deve criar um vetor C com os elementos de A e B intercalados.
@@ -26,8 +28,17 @@ public class Ex06 {
     }
 
     String compute(int[] arrayA, int[] arrayB) {
-        String output = null;
-        //put your logic here
-        return output;
+        int N = arrayA.length;
+        int [] arrayC = new int[N*2];
+        for (int i = 0; i < N; i++) {
+            arrayC[2 * i] = arrayA[i];
+            arrayC[2 * i + 1] = arrayB[i];
+        }
+
+        var joiner = new StringJoiner(" ");
+        for (int value : arrayC) joiner.add(String.valueOf(value));
+
+        return joiner.toString();
+
     }
 }

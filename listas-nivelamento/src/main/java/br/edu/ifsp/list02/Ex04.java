@@ -32,9 +32,13 @@ public class Ex04 {
         //Escreva o resultado da chamada do método compute() aqui
     }
 
-    int compute(int ia, int ib, int fa, int fb) {
-        int output = -1;
-        //put your logic here
-        return output;
+    int compute(int IA, int IB, int FA, int FB) {
+        boolean mudaA = (IA != FA);
+        boolean mudaB = (IB != FB);
+
+        if (!mudaA && !mudaB) return 0;  // Nenhuma muda
+        if (mudaA && mudaB) return 1;     // Ambas mudam (C2)
+        if (mudaA && !mudaB) return 1;    // Só A muda (C1)
+        return 2;                          // Só B muda (C2 + C1)
     }
 }

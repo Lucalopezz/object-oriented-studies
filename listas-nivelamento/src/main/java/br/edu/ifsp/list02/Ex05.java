@@ -27,8 +27,18 @@ public class Ex05 {
     }
 
     int compute(int[] velas) {
-        int output = -1;
-        //put your logic here
-        return output;
+        int max = velas[0];
+        int count = 0;
+
+        for (int vela : velas) {
+            if (vela > max) {
+                max = vela;
+                count = 1;
+            } else if (vela == max) {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
