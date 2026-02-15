@@ -16,8 +16,79 @@ public class Ex03 {
     }
 
     String compute(int[] firstFive, int[] otherInts) {
-        String output = null;
-        //put your logic here
-        return output;
+        if (firstFive == null || firstFive.length != 5 || otherInts == null) {
+            return "Erro";
+        }
+        if (temRepetido(firstFive)) return "Erro";
+
+        int[] vetor = new int[10];
+        int tamanho = 5;
+
+        System.arraycopy(firstFive, 0, vetor, 0, 5);
+//        for (int i = 0; i < 5; i++) {
+//            vetor[i] = firstFive[i];
+//        }
+        String resultado = "";
+        resultado += vetorParaString(vetor, tamanho) + "\n";
+
+        for (int num : otherInts) {
+            int pos = encontrar(vetor, num, tamanho);
+            if (pos == -1) {
+                if (tamanho < 10) {
+                    vetor[tamanho] = num;
+                    tamanho++;
+                    resultado += vetorParaString(vetor, tamanho) + "\n";
+                } else {
+                    break;
+                }
+            } else {
+                remove(vetor, pos, tamanho);
+                tamanho--;
+                resultado += vetorParaString(vetor, tamanho) + "\n";
+                if (tamanho == 0) break;
+            }
+
+        }
+        return resultado.trim();
+
+
+    }
+
+    private boolean temRepetido(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private int encontrar(int[] array, int busca, int tamanho) {
+        for (int i = 0; i < tamanho; i++) {
+            if (array[i] == busca) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private void remove(int[] array, int pos, int tamanho) {
+        for (int i = pos; i < tamanho; i++) {
+            array[i] = array[i + 1];
+        }
+        array[tamanho - 1] = 0;
+    }
+
+    private String vetorParaString(int[] vetor, int tamanho) {
+        String s = "";
+        for (int i = 0; i < tamanho; i++) {
+            s += vetor[i];
+            if (i < tamanho - 1) {
+                s += " ";
+            }
+        }
+        return s;
     }
 }
