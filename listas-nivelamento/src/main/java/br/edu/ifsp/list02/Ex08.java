@@ -36,8 +36,16 @@ public class Ex08 {
     }
 
     String compute(int[] giftsWeights) {
-        String output = null;
-        //put your logic here
-        return output;
+        // não funciona em todos os casos
+        int N = giftsWeights.length;
+        int sum = 0;
+        for (int giftWeight : giftsWeights) {
+            sum += giftWeight;
+        }
+        if (sum % 2 >= 5) {
+            return "N";
+        }
+        return "S";
+
     }
 }

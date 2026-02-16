@@ -47,8 +47,9 @@ public class Ex07 {
     }
 
     String compute(int x, int y, int l1, int h1, int l2, int h2) {
-        String output = null;
-        //put your logic here
-        return output;
+        if (l1 + l2 <= x || h2 + h1 <= x && l1 + l2 <= y || h1 + h2 <= y) {
+            return "S";
+        }
+        return "N";
     }
 }

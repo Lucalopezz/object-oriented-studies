@@ -49,8 +49,15 @@ public class Ex09 {
     }
 
     String compute(int a, int b, int c, int h, int l) {
-        String output = null;
-        //put your logic here
-        return output;
+
+        if (
+                (a <= h && b <= l) || (a <= l && b <= h) || // verifica a e b
+                (a <= h && c <= l) || (a <= l && c <= h) || // verifica a e c
+                (b <= h && c <= l) || (b <= l && c <= h) // verifica b e c
+        ) {
+            return "S";
+        }
+
+        return "N";
     }
 }
