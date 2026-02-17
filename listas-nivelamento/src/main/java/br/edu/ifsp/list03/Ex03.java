@@ -13,8 +13,16 @@ public class Ex03 {
     }
 
     String compute(String input) {
-        String output = null;
-        //put your logic here
-        return output;
+        if (input == null || input.isEmpty()) return "Sim";
+        String lower = input.toLowerCase().trim();
+
+        String invertida = new StringBuilder(lower).reverse().toString();
+
+        if (lower.equals(invertida)) {
+            return "Sim";
+        }
+        return "Nao";
+
+
     }
 }

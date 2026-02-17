@@ -3,12 +3,18 @@ package br.edu.ifsp.list02;
 /*
     Um robô possui um sensor de infravermelho para navegação e mapeamento que emite 181 feixes com um intervalo de um
     grau entre cada um deles (-90° na extrema-esquerda (feixe 0), 0° no centro (feixe 90) e 90° na extrema direita
-    (feixe 180)). O sensor está perfeitamente alinhado ao robô, sendo que o feixe 90 aponta para a frente. Cada feixe
+    (feixe 180)).
+
+     O sensor está perfeitamente alinhado ao robô, sendo que o feixe 90 aponta para a frente. Cada feixe
     possui alcance máximo de oito metros e uma medida inferior a isso indica que há um obstáculo mais próximo no ambiente.
     Considerando-se que o robô possui um GPS sem erro, é possível obter sua posição exata (x1, y1) em um plano cartesiano.
+
+
     Utilize coordenadas polares para calcular a posição de um ponto de colisão no ambiente a partir das coordenadas "x1" e
     "y1" da posição do robô, do ângulo "a" de orientação do robô no plano (em graus), de um número "f" indicando feixe
-    escolhido e da distância "d" medida pelo feixe d >=0). Por questão de simplificação, utilize valores inteiros para as
+    escolhido e da distância "d" medida pelo feixe d >=0).
+
+    Por questão de simplificação, utilize valores inteiros para as
     coordenadas do robô e do obstáculo (saída esperada), bem como para o ângulo do robô e a distância medida pelo feixe.
     O valor da saída esperada deverá ser arredondado para inteiro, não truncado. Dica: os métodos Math.sin(a) e Math.con(a)
     utilizam valores em radianos e não graus.
@@ -36,8 +42,26 @@ public class Ex10 {
     }
 
     String compute(int x, int y, int a, int f, int d) {
-        String output = null;
-        //put your logic here
-        return output;
+        if (f < 0 || f > 180 || d < 0) {
+            return "Erro";
+        }
+        // converte o número do feixe (0 a 180) em ângulo relativo (-90 a +90)
+        int anguloFeixe = f - 90;
+        // soma a orientação do robo com o ângulo do feixe
+        int anguloTotal = a + anguloFeixe;
+
+        // descubro em radiano o angulo de onde a maquina ta apontando
+        double rad = Math.toRadians(anguloTotal);
+
+
+        // calcula as coordenadas do ponto de colisão
+        double x2 = x + d * Math.sin(rad);
+        double y2 = y + d * Math.cos(rad);
+
+        // arredondamento
+        int xr = (int) Math.round(x2);
+        int yr = (int) Math.round(y2);
+
+        return "(" + xr + "," + yr + ")";
     }
 }

@@ -14,8 +14,24 @@ public class Ex02 {
     }
 
     String compute(String word, int number) {
-        String output = null;
-        //put your logic here
-        return output;
+        if (word.length() < number || number <= 0) {
+            return null;
+        }
+        String maior = word.substring(0, number);
+        String menor = maior;
+        for (int i = 0; i <= word.length() - number; i++) {
+            String sub = word.substring(i, i + number);
+
+
+            if (sub.compareTo(menor) < 0) {
+                menor = sub;
+            }
+
+            if (sub.compareTo(maior) > 0) {
+                maior = sub;
+            }
+        }
+
+        return menor + " " + maior;
     }
 }
