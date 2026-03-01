@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise3 {
 //    Campo de Minhocas
 //
@@ -32,6 +34,39 @@ public class Exercise3 {
 //
 //    A saída deve ser composta por uma única linha contendo um inteiro, indicando o número esperado total de minhocas a serem colhidas pela máquina durante o teste.
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+
+        int[][] matriz = new int[n][m];
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                matriz[i][j] = sc.nextInt();
+            }
+        }
+
+        int maior = 0;
+
+        // Calcula a soma das linhas, e mantém o maior valor encontrado
+        for(int i = 0; i < n; i++){
+            int soma = 0;
+            for(int j = 0; j < m; j++){
+                soma += matriz[i][j];
+            }
+            if(soma > maior) maior = soma;
+        }
+        // Calcula a soma das colunas, e mantém o maior valor encontrado
+        for(int j = 0; j < m; j++){
+            int soma = 0;
+            for(int i = 0; i < n; i++){
+                soma += matriz[i][j];
+            }
+            if(soma > maior) maior = soma;
+        }
+
+        System.out.println(maior);
 
     }
 }
