@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class Exercise2 {
-//    Em chats, é muito comum entre jovens e adolescentes utilizar sequências de letras, que parecem muitas vezes aleatórias, para representar risadas. Alguns exemplos comuns são:
+    //    Em chats, é muito comum entre jovens e adolescentes utilizar sequências de letras, que parecem muitas vezes aleatórias, para representar risadas. Alguns exemplos comuns são:
 //
 //    huaauhahhuahau
 //            hehehehe
@@ -23,6 +25,35 @@ public class Exercise2 {
 //
 //    Seu programa deve produzir uma linha contendo um caractere, “S” caso a risada seja das mais engraçadas, ou “N” caso contrário.
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String in = sc.nextLine();
 
+        char[] letras = in.toCharArray();
+        String vogais = "";
+
+        // Extrai as vogais da sequência de caracteres
+        for (int i = 0; i < letras.length; i++) {
+            if (letras[i] == 'a' || letras[i] == 'e' || letras[i] == 'i'
+                    || letras[i] == 'o' || letras[i] == 'u') {
+                vogais += letras[i];
+            }
+        }
+
+        char[] v = vogais.toCharArray();
+        boolean ver = true;
+
+        // Verifica se as vogais formam uma sequência palíndroma
+        for (int i = 0; i < v.length / 2; i++) {
+            if (v[i] != v[v.length - 1 - i]) {
+                ver = false;
+                break;
+            }
+        }
+
+        if (ver) {
+            System.out.println("S");
+        } else {
+            System.out.println("N");
+        }
     }
 }
