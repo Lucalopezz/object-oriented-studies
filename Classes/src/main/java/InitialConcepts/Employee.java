@@ -25,8 +25,15 @@ public class Employee {
         this.computer = computer; // receives a reference by value and assigns it to the computer attribute
     }
 
-    void increaseSalary(double percentage) {
-        salary = salary * (1 + percentage / 100);
+    // A method designed to be accessed by other classes in the application
+    public void increaseSalary(int amount) {
+        if (!isValidAmount(amount)) return;
+        salary += amount;
+    }
+
+    // An auxiliary method that can only be invoked within the Employee class
+    private boolean isValidAmount(int amount) {
+        return amount >= 0;
     }
 
     double calculateBonus() {
