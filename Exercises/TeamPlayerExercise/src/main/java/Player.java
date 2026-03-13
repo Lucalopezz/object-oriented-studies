@@ -17,8 +17,12 @@ public class Player {
         isFielded = fielded;
     }
 
-    public String getStateAsString(){
-        return "Player{name='" + name + "', number=" + number + ", position='" + position + "', isFielded=" + isFielded + "}";
+    public boolean getFielded() {
+        return isFielded;
+    }
+
+    public String getStateAsString() {
+        return "Player: name='" + name + "', number=" + number + ", position='" + position + "', isFielded=" + isFielded;
     }
 
 }

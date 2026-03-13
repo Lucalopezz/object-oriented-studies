@@ -38,6 +38,59 @@ public class Team {
 
     }
 
+    public void substitute(Player substitute, Player starter) {
+        if (playerCount == 0) {
+            System.out.println("No players to substitute from the team.");
+            return;
+        }
+        int index = findPlayerIndex(starter);
+        if (index != -1) {
+            players[index] = substitute;
+        }
+    }
+
+    public void setCaptain(Player captain) {
+        this.captain = captain;
+    }
+    public Player getCaptain() {
+        return captain;
+    }
+    public String getCoachName(){
+        return coachName;
+    }
+
+    public Player[] getFieldedPlayers() {
+        Player[] fieldedPlayers = new Player[11];
+        int count = 0;
+        for (int i = 0; i < playerCount; i++) {
+            if (players[i].getFielded()) {
+                if (count < 11) {
+                    fieldedPlayers[count] = players[i];
+                    count++;
+                } else {
+                    players[i].setFielded(false);
+                }
+            }
+        }
+        return fieldedPlayers;
+    }
+
+    public Player[] getOutfieldedPlayers() {
+        Player[] outPlayers = new Player[7];
+        int count = 0;
+        for (int i = 0; i < playerCount; i++) {
+            if (!players[i].getFielded()) {
+                if (count < 7) {
+                    outPlayers[count] = players[i];
+                    count++;
+                } else {
+                    players[i].setFielded(true);
+                }
+            }
+        }
+        return outPlayers;
+    }
+
     private int findPlayerIndex(Player p) {
         for (int i = 0; i < playerCount; i++) {
             if (players[i] == p) {
