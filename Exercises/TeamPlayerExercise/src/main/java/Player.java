@@ -17,12 +17,20 @@ public class Player {
         isFielded = fielded;
     }
 
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
     public boolean getFielded() {
         return isFielded;
     }
 
     public String getStateAsString() {
-        return "Player: name='" + name + "', number=" + number + ", position='" + position + "', isFielded=" + isFielded;
+        return "Player: name='" + name +
+                "', number=" + number +
+                ", position='" + position +
+                "', isFielded=" + isFielded +
+                ", Team: " + (team != null ? team.getTeamName() : "No Team");
     }
 
 }

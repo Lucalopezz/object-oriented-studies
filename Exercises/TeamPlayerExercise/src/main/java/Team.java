@@ -12,10 +12,23 @@ public class Team {
         this.baseLocation = baseLocation;
         this.coachName = coachName;
     }
+    public void setCaptain(Player captain) {
+        this.captain = captain;
+    }
+    public Player getCaptain() {
+        return captain;
+    }
+    public String getCoachName(){
+        return coachName;
+    }
+    public String getTeamName(){
+        return name;
+    }
 
     public void addPlayer(Player player) {
         System.out.println("Adding player: " + player.getStateAsString() + " to team: " + name);
         if (playerCount < 18) {
+            player.setTeam(this);
             players[playerCount] = player;
             playerCount++;
         } else {
@@ -35,6 +48,7 @@ public class Team {
                 players[i] = players[i + 1];
             }
         }
+        playerCount--;
 
     }
 
@@ -47,16 +61,6 @@ public class Team {
         if (index != -1) {
             players[index] = substitute;
         }
-    }
-
-    public void setCaptain(Player captain) {
-        this.captain = captain;
-    }
-    public Player getCaptain() {
-        return captain;
-    }
-    public String getCoachName(){
-        return coachName;
     }
 
     public Player[] getFieldedPlayers() {
