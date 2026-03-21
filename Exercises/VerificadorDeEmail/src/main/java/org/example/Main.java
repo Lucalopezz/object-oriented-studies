@@ -15,5 +15,10 @@ public class Main {
             System.out.println("Email inválido: " + email);
         }
 
+        String phrase = "I love Java, Java is great!";
+        String searchedWord = "Java";
+        int count = CountWords.countWords(phrase, searchedWord);
+        System.out.println("A palavra '" + searchedWord + "' aparece " + count + " vezes na frase: " + phrase);
+
     }
 }
