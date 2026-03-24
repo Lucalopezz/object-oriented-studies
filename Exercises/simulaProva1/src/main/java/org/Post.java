@@ -1,10 +1,11 @@
 package org;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Post {
     private String quote;
-    private LocalDate date;
+    private LocalDateTime date;
     private int claps;
     private int boos;
 
@@ -13,9 +14,29 @@ public class Post {
     public Post(String quote, UserAccount userAccount) {
         this.quote = quote;
         this.userAccount = userAccount;
-        this.date = LocalDate.now();
+        this.date = LocalDateTime.now();
         this.claps = 0;
         this.boos = 0;
+    }
+
+    public String show() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - hh:mm");
+        return String.format(
+                "[%s] %s says \"%s\" | Claps: %d | Boos: %d.",
+                formatter.format(date),
+                userAccount.getUserName(),
+                quote,
+                claps,
+                boos
+        );
+    }
+
+    public void clap() {
+        this.claps++;
+    }
+
+    public void boo() {
+        this.boos++;
     }
 
     public int getBoos() {
@@ -26,15 +47,15 @@ public class Post {
         return claps;
     }
 
-    public String show() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(this.date).append(" ").append(this.userAccount.getUserName()).append(": ").append(this.quote).append(" (").append(this.claps).append(" claps, ").append(this.boos).append(" boos)");
-        return sb.toString();
+    public String getQuote() {
+        return quote;
     }
-    public void clap() {
-        this.claps++;
+
+    public LocalDateTime getDate() {
+        return date;
     }
-    public void boo() {
-        this.boos++;
+
+    public String getUserName() {
+        return userAccount.getUserName();
     }
 }
