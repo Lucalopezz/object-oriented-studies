@@ -1,7 +1,9 @@
 package br.edu.ifsp;
 
-import br.edu.ifsp.game.Game;
-import br.edu.ifsp.game.Player;
+//import br.edu.ifsp.game.Game;
+//import br.edu.ifsp.game.Player;
+import br.edu.ifsp.remake.Game;
+import br.edu.ifsp.remake.Player;
 
 public class Principal {
     public static void main(String[] args) {
