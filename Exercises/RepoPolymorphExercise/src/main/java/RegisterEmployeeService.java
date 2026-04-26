@@ -7,8 +7,13 @@ public class RegisterEmployeeService {
     }
 
     public void register(Employee e){
-        if (repository.getById(e.getId()) == null) {
-            repository.save(e);
+        if (e == null) throw new IllegalArgumentException("Employee must not be null.");
+        if (e.getId() == null) throw new IllegalArgumentException("ID is required.");
+        if (e.getName() == null || e.getName().isBlank()) throw new IllegalArgumentException("Name is required.");
+
+        if (repository.getById(e.getId()) != null) {
+            throw new IllegalStateException("Employee " + e.getId() + " already exists.");
         }
+        repository.save(e);
     }
 }

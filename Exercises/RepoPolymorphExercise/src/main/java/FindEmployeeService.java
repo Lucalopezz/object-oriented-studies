@@ -7,6 +7,8 @@ public class FindEmployeeService {
     }
 
     public Employee findById(String id) {
+        if (id.isEmpty()) throw new IllegalArgumentException("ID is required.");
+
         return repository.getById(id);
     }
 }
