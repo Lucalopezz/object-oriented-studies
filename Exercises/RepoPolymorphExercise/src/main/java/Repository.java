@@ -1,4 +1,4 @@
-public interface Repository <Id, T>{
+public interface Repository <K, T>{
     void save(T item);
-    T getById(Id id);
+    T getById(K id);
 }
