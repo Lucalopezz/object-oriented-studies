@@ -8,14 +8,16 @@ import Try2.infrastructure.FakeDeclaracaoRepository;
 
 public class Main {
     public static void main(String[] args) {
+        final FakeDeclaracaoRepository repository = new FakeDeclaracaoRepository();
+
         final AdicionarGastoTributavelService adicionarGastoTributavelService = new AdicionarGastoTributavelService(
-                new FakeDeclaracaoRepository()
+                repository
         );
         final CriarDeclaracoesService criarDeclaracoesService = new CriarDeclaracoesService(
-                new FakeDeclaracaoRepository()
+                repository
         );
         final CriaRelatorioDeclaracoesService criaRelatorioDeclaracoesService = new CriaRelatorioDeclaracoesService(
-                new FakeDeclaracaoRepository()
+                repository
         );
 
         criarDeclaracoesService.criarDeclaracoes(50_000.0, 5_000);

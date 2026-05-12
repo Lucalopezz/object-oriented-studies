@@ -1,8 +1,10 @@
 package Try2.domain;
 
+import Try2.infrastructure.persistence.Entidade;
+
 import java.util.Objects;
 
-public abstract sealed class Gasto permits GastoEducacao, GastoSaude {
+public abstract sealed class Gasto implements Entidade<Long> permits GastoEducacao, GastoSaude {
     private final long id;
     private String cnpj;
     private String descricao;
@@ -32,7 +34,8 @@ public abstract sealed class Gasto permits GastoEducacao, GastoSaude {
         return String.format("ID: %d\nCNPJ: %s\nDescrição: %s\nValor: %.2f\n", id, cnpj, descricao, valor);
     }
 
-    public long getId() {
+    @Override
+    public Long getId() {
         return id;
     }
 

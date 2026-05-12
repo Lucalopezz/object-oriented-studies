@@ -4,9 +4,11 @@ import Try2.domain.*;
 
 public class AdicionarGastoTributavelService {
     private final DeclaracaoRepository repository;
+
     public AdicionarGastoTributavelService(DeclaracaoRepository repository) {
         this.repository = repository;
     }
+
     public void adcionarGastoTributavel(long id, String descricao, String cnpj,
                                         double valor, TipoGasto tipoGasto, String adicional) {
         if (id <= 0)
@@ -28,7 +30,7 @@ public class AdicionarGastoTributavelService {
             throw new IllegalArgumentException("O campo adicional não pode ser nulo ou vazio.");
 
 
-        final DeclaracaoCompleta declaracao = (DeclaracaoCompleta) repository.buscarPorId(1).orElseThrow(IllegalArgumentException::new);
+        final DeclaracaoCompleta declaracao = (DeclaracaoCompleta) repository.buscarPorId(1L).orElseThrow(IllegalArgumentException::new);
 
         Gasto gasto = switch (tipoGasto) {
             case SAUDE -> new GastoSaude(id, descricao, cnpj, valor, adicional);

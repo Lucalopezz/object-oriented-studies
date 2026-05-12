@@ -1,8 +1,10 @@
 package Try2.domain;
 
+import Try2.infrastructure.persistence.Entidade;
+
 import java.util.Objects;
 
-public abstract sealed class Declaracao permits DeclaracaoCompleta, DeclaracaoSimplificada {
+public abstract sealed class Declaracao implements Entidade<Long> permits DeclaracaoCompleta, DeclaracaoSimplificada {
     private final long id;
     private double ganhoTributavel;
     private double valorPago;
@@ -39,7 +41,7 @@ public abstract sealed class Declaracao permits DeclaracaoCompleta, DeclaracaoSi
         return Objects.hashCode(id);
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

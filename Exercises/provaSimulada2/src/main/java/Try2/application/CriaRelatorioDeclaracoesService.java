@@ -11,8 +11,8 @@ public class CriaRelatorioDeclaracoesService {
 
     public String criaRelatorio() {
 
-        Declaracao completa = repository.buscarPorId(1).orElseThrow(IllegalArgumentException::new);
-        Declaracao simplificada = repository.buscarPorId(1).orElseThrow(IllegalArgumentException::new);
+        Declaracao completa = repository.buscarPorId(1L).orElseThrow(IllegalArgumentException::new);
+        Declaracao simplificada = repository.buscarPorId(1L).orElseThrow(IllegalArgumentException::new);
 
         return simplificada + "\n\n" + completa;
     }
