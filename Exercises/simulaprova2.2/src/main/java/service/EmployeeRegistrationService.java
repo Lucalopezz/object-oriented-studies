@@ -25,46 +25,9 @@ public class EmployeeRegistrationService {
             String consultantId
     ) {
 
-        // ERRO aqui
+        // ERRO aqui  -> devido ao ID que está no reseller
         Reseller reseller =
                 new Reseller(id, name, birthDate, soldValue);
 
-
-        if (consultantId == null) {
-            repository.save(reseller);
-            return;
-        }
-
-        Employee responsible = repository.findById(consultantId)
-                .orElseThrow(() -> new IllegalArgumentException("Responsible employee not found"));
-
-        Consultant consultant;
-
-        // se já for consultant
-        if (responsible instanceof Consultant c) {
-
-            consultant = c;
-
-        } else {
-
-            // promove reseller para consultant
-            consultant = new Consultant(
-                    responsible.getId(),
-                    responsible.getName(),
-                    responsible.getDateOfBirth(),
-                    responsible.getSoldValue()
-            );
-
-            repository.update(consultant);
-        }
-
-
-        consultant.addEmployee(reseller);
-
-        // salva novo reseller
-        repository.save(reseller);
-
-        // atualiza consultant
-        repository.update(consultant);
     }
 }
