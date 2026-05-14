@@ -12,14 +12,9 @@ public final class Consultant extends Employee {
         subordinates = new LinkedHashSet<>();
     }
 
-    public void addEmployee(Employee employee) {
-        if (employee instanceof Consultant) throw new IllegalArgumentException("Consultant cannot have subordinates");
-        if (employee.getId().equals(getId())) {
-            throw new IllegalArgumentException(
-                    "Employee cannot be subordinate of itself"
-            );
-        }
-        subordinates.add(employee);
+    public void addEmployee(Employee e) {
+        subordinates.remove(e);
+        subordinates.add(e);
     }
 
     public Set<Employee> getEmployees() {

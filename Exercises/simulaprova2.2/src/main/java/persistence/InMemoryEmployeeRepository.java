@@ -33,6 +33,11 @@ public class InMemoryEmployeeRepository implements Repository<String, Employee> 
         employees.put(newValue.getId(), newValue);
     }
 
+    // Estou com duvidas aqui, desse modo está usando objetos em memória (Map<String, Employee>)
+    // e os relacionamentos já estão apontando para os mesmos objetos.
+    // Então consigo pegar os subordinados
+    // Mas falando com meus amigos e vendo umas soluçoes do gpt, vi que tem uma
+    // abordagem que usa recursão
     @Override
     public Optional<Employee> findById(String id) {
         if (id == null) {
