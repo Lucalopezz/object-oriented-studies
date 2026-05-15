@@ -1,6 +1,10 @@
 package model;
 
+import javax.swing.text.DateFormatter;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.util.Formatter;
 import java.util.Objects;
 
 public sealed abstract class Employee permits Consultant, Reseller {
@@ -19,8 +23,8 @@ public sealed abstract class Employee permits Consultant, Reseller {
     public abstract double getCommision();
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
+        if (this == o) return true;
+        if (!(o instanceof Employee employee)) return false;
         return Objects.equals(id, employee.id);
     }
 
@@ -31,7 +35,8 @@ public sealed abstract class Employee permits Consultant, Reseller {
 
     @Override
     public String toString() {
-        return String.format("model.Employee: id='%s', name='%s', dateOfBirth=%s, soldValue=%.2f", id, name, dateOfBirth, soldValue);
+        DateTimeFormatter dt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return String.format("[%s] %s | %s | Amount in sales: US$%f | Comission: US$ %f", id, name, dt.format(getDateOfBirth()), soldValue, getCommision());
     }
 
     public String getId() {

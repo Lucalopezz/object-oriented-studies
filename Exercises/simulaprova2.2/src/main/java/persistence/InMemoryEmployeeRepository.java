@@ -40,11 +40,17 @@ public class InMemoryEmployeeRepository implements Repository<String, Employee> 
     // abordagem que usa recursão
     @Override
     public Optional<Employee> findById(String id) {
-        if (id == null) {
-            throw new IllegalArgumentException("Id cannot be null");
+        Employee employee = get(id);
+
+        if (employee instanceof Consultant consultant) {
+
+            consultant.getEmployees().forEach(subordinate ->
+                    findById(subordinate.getId())
+                            .ifPresent(consultant::addEmployee)
+            );
         }
 
-        return Optional.ofNullable(get(id));
+        return Optional.of(employee);
     }
 
 
