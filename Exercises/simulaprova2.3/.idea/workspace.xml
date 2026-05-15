@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7050092-b453-41e7-8113-0dfc42d5b22f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CardExercice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/CardExercice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/src/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/src/Deck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/src/Ranks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardExercice/src/Suits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/exercise1/Convention.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/exercise1/NamingConventions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/exercise2/Meeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/exercise2/Schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/remake/exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/remake/exercise2/Meeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NamingConventions/src/main/java/org/example/remake/exercise2/Schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/application/services/DeleteEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/application/services/FindEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/application/services/ListEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/application/services/RegisterEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/application/services/SalaryReportService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/application/services/UpdateEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/domein/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/infrastructure/database/array/FakeManualEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/employee/infrastructure/database/arraylist/FakeArrayListEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/shared/application/ServiceContract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/out/shared/domain/repositories/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/application/services/DeleteEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/application/services/FindEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/application/services/ListEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/application/services/RegisterEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/application/services/SalaryReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/application/services/UpdateEmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/domein/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/infrastructure/database/array/FakeManualEmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/employee/infrastructure/database/arraylist/FakeArrayListEmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/shared/application/ServiceContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RepoPolymorphExercise/src/main/java/shared/domain/repositories/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/Prova.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/deck/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/deck/Deck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/deck/Rank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/deck/Suit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/game/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/game/Hand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/game/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/game/Round.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/remake/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/remake/Hand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/remake/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Simaldo2Prova1/src/main/java/br/edu/ifsp/remake/Round.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/src/main/java/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamPlayerExercise/src/main/java/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/src/main/java/org/example/CountWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/src/main/java/org/example/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VerificadorDeEmail/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/org/example/Guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/org/example/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/org/example/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/org/example/ReservationIdGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/org/example/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/remake/Guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/remake/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/remake/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/remake/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/remake/ReservationIdGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prova024/src/main/java/remake/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/exeption/EntityAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/model/Consultant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/model/Reseller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/persistence/InMemoryEmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/persistence/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/service/EmployeeRegistrationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../simulaprova2.2/src/main/java/service/EmployeeReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Candidato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cargo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Partido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Urna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UrnaImp.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="219c7243-03aa-4461-a4bb-76ad5c4b1e19" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="219c7243-03aa-4461-a4bb-76ad5c4b1e19" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/lopsl/Documents/Programação/Faculdade/object-oriented-studies/Exercises/simulaprova2.3" value="3Djl5AlzzjXg0t9ydKozGp5L9Xz" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Djl5AlzzjXg0t9ydKozGp5L9Xz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="simulaprova2.3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7050092-b453-41e7-8113-0dfc42d5b22f" name="Changes" comment="" />
+      <created>1778803173406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778803173406</updated>
+      <workItem from="1778803175638" duration="1385000" />
+      <workItem from="1778855230293" duration="425000" />
+      <workItem from="1778858090736" duration="2572000" />
+      <workItem from="1778879578422" duration="2882000" />
+      <workItem from="1778882516263" duration="211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
