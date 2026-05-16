@@ -1,12 +1,17 @@
 package Try3.model;
 
+import Try3.persistence.Entidade;
+
 import java.util.Objects;
 
-public abstract sealed class Declaracao permits DeclaracaoCompleta, DeclaracaoSimplificada {
+public abstract sealed class Declaracao implements Entidade<Long> permits DeclaracaoCompleta, DeclaracaoSimplificada {
+    public static long IDCOUNT = 0;
+    private final Long id;
     private double ganhoTributavel;
     private double valorPago;
 
-    public Declaracao(double ganhoTributavel, double valorPago) {
+    public Declaracao(long id, double ganhoTributavel, double valorPago) {
+        this.id = id;
         this.ganhoTributavel = ganhoTributavel;
         this.valorPago = valorPago;
     }
@@ -25,12 +30,12 @@ public abstract sealed class Declaracao permits DeclaracaoCompleta, DeclaracaoSi
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Declaracao that = (Declaracao) o;
-        return Double.compare(ganhoTributavel, that.ganhoTributavel) == 0 && Double.compare(valorPago, that.valorPago) == 0;
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ganhoTributavel, valorPago);
+        return Objects.hashCode(id);
     }
 
     @Override
@@ -52,5 +57,10 @@ public abstract sealed class Declaracao permits DeclaracaoCompleta, DeclaracaoSi
 
     public void setValorPago(double valorPago) {
         this.valorPago = valorPago;
+    }
+
+    @Override
+    public Long getId() {
+        return id;
     }
 }
