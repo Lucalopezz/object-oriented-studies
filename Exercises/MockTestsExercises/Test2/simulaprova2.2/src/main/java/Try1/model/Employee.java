@@ -1,10 +1,7 @@
-package model;
+package Try1.model;
 
-import javax.swing.text.DateFormatter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.util.Formatter;
 import java.util.Objects;
 
 public sealed abstract class Employee permits Consultant, Reseller {

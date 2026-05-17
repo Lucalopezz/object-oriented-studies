@@ -1,10 +1,8 @@
-package service;
+package Try1.service;
 
-import model.Consultant;
-import model.Employee;
-import persistence.Repository;
-
-import java.util.Optional;
+import Try1.model.Consultant;
+import Try1.model.Employee;
+import Try1.persistence.Repository;
 
 public class EmployeeReportService {
     private final Repository<String, Employee> repository;

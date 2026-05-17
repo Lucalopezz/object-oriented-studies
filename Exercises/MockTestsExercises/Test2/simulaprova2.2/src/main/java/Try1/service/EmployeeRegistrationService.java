@@ -1,9 +1,9 @@
-package service;
+package Try1.service;
 
-import model.Consultant;
-import model.Employee;
-import model.Reseller;
-import persistence.Repository;
+import Try1.model.Consultant;
+import Try1.model.Employee;
+import Try1.model.Reseller;
+import Try1.persistence.Repository;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package model;
+package Try1.model;
 
 import java.time.LocalDate;
 import java.util.LinkedHashSet;

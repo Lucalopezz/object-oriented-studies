@@ -1,12 +1,12 @@
-// ==========================
+package Try1;// ==========================
 // File: Main.java
 // ==========================
 
-import model.Employee;
-import persistence.InMemoryEmployeeRepository;
-import persistence.Repository;
-import service.EmployeeRegistrationService;
-import service.EmployeeReportService;
+import Try1.model.Employee;
+import Try1.persistence.InMemoryEmployeeRepository;
+import Try1.persistence.Repository;
+import Try1.service.EmployeeRegistrationService;
+import Try1.service.EmployeeReportService;
 
 import java.time.LocalDate;
 
