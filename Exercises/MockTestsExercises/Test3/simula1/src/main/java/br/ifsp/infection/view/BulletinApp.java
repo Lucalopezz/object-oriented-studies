@@ -1,37 +1,23 @@
 package br.ifsp.infection.view;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 
-import java.io.IOException;
-import java.util.Objects;
 
-public class BulletinApp extends Application {
-    private static Scene scene;
-    private static Object controller;
+import br.ifsp.infection.model.Bulletin;
+import br.ifsp.infection.persistence.SqliteBulletinDao;
+import br.ifsp.infection.service.*;
 
-    @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("bulletin_management"));
-        stage.setScene(scene);
-        stage.show();
-    }
+public class BulletinApp{
+   static void main(){
+      SqliteBulletinDao repo = new SqliteBulletinDao();
+      var registerService = new RegisterBulletinService(repo);
+      var updateService = new UpdateBulletinService(repo);
+      var removeService = new RemoveBulletinService(repo);
+      var filterService = new FilterBulletinService(repo);
+      var statisctService = new StatisticsService();
 
-    public static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
+      registerService.register(new Bulletin(1, "SP", ));
+      updateService.update();
 
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        Parent parent = fxmlLoader.load(Objects.requireNonNull(BulletinApp.class.getResource(fxml + ".fxml")).openStream());
-        controller = fxmlLoader.getController();
-        return parent;
-    }
 
-    public static Object getController() {
-        return controller; // Cast to your specific controller (e.g, BulletinController)
-    }
+   }
 }

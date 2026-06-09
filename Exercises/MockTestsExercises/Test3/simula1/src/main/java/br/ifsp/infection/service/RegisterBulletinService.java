@@ -16,7 +16,7 @@ public class RegisterBulletinService {
     public void register(Bulletin bulletin){
         Objects.requireNonNull(bulletin, "Bulletin must not be null.");
         if(repo.existsById(bulletin.getId()))
-            throw new EntityAlreadyExistsException("Bulletin already exists "+bulletin);
+            throw new EntityAlreadyExistsException("Bulletin already exists "+bulletin.getId());
         repo.insert(bulletin);
     }
 }
