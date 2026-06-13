@@ -5,7 +5,7 @@ import Try4.persistence.Entidade;
 import java.util.Objects;
 
 public sealed class Gasto implements Entidade<Long> permits GastoSaude, GastoEducacao{
-    public static double idCount = 1;
+    public static long idCount = 1;
     private final long id;
     private final String descricao;
     private final double valor;

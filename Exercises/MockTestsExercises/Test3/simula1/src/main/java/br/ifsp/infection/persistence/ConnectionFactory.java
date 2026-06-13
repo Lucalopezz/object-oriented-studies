@@ -12,17 +12,12 @@ public class ConnectionFactory {
     }
 
     public static Connection getConnection() throws SQLException {
-
-        if (connection == null || connection.isClosed()) {
+        if (connection == null || connection.isClosed())
             connection = DriverManager.getConnection("jdbc:sqlite:database.db");
-        }
-
-
         return connection;
     }
 
-    public static PreparedStatement prepareStatement(String query) throws SQLException {
-
-        return getConnection().prepareStatement(query);
+    public static PreparedStatement preparedStatement(String sql) throws SQLException {
+        return getConnection().prepareStatement(sql);
     }
 }

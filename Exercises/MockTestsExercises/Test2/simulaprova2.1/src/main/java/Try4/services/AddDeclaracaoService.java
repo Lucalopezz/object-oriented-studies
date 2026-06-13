@@ -6,13 +6,14 @@ import Try4.models.DeclaracaoSimplificada;
 import Try4.models.Gasto;
 import Try4.persistence.DeclaracaoRepository;
 import Try4.persistence.GastoRepository;
+import Try4.persistence.GenericDAO;
 
 import java.util.UUID;
 
 public class AddDeclaracaoService {
-    private final DeclaracaoRepository declaracaoRepository;
+    private final GenericDAO<String, Declaracao> declaracaoRepository;
 
-    public AddDeclaracaoService(DeclaracaoRepository declaracaoRepository) {
+    public AddDeclaracaoService(GenericDAO declaracaoRepository) {
         this.declaracaoRepository = declaracaoRepository;
     }
 

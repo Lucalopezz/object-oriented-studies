@@ -12,5 +12,6 @@ module covid_app {
 
 
     exports br.ifsp.infection.controller;
+    exports br.ifsp.infection.service;
 
 }
