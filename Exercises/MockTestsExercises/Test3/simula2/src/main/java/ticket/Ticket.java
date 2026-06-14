@@ -29,9 +29,9 @@ public class Ticket {
         this.exit = LocalDateTime.now();
     }
 
-    public Duration parkingDuration() {
+    public long parkingDuration() {
         if (exit == null) throw new IllegalStateException("Vehicle has not exited yet.");
-        return Duration.between(entry, exit);
+        return Duration.between(entry, exit).getSeconds()/60;
     }
 
     @Override

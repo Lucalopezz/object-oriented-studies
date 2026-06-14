@@ -27,7 +27,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
     @Override
     public Optional<CustomerDto> findOne(String plate) {
-        String sql = "SELECT 1 FROM customer WHERE plate = ?";
+        String sql = "SELECT * FROM customer WHERE plate = ?";
         try (var stmt = ConnectionFactory.getConnection().prepareStatement(sql)) {
             stmt.setString(1, plate);
             final ResultSet rs = stmt.executeQuery();
